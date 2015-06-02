@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group android:id="@+id/group1">
+        <item android:id="@+id/mi1"
+            android:title="发送">
+            <!--ContextMenu的嵌套，图片添加失败-->
+            <menu>
+                <item android:id="@+id/mi_display_setting"
+                    android:title="发送邮件"
+                    android:icon="@mipmap/ic_launcher"
+                    />
+                <item android:id="@+id/mi_network_setting"
+                    android:title="发送短信"/>
+                <!-- 别的菜单项 -->
+            </menu>
+        </item>
+
+        <item android:id="@+id/mi2"
+            android:title="删除"/>
+    </group>
+</menu>
